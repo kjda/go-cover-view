@@ -1,17 +1,12 @@
-# go-cover-view
-
-
-[![ci](https://github.com/johejo/go-cover-view/workflows/ci/badge.svg?branch=master)](https://github.com/johejo/go-cover-view/actions?query=workflow%3Aci)
-[![codecov](https://codecov.io/gh/johejo/go-cover-view/branch/master/graph/badge.svg)](https://codecov.io/gh/johejo/go-cover-view)
-[![Go Report Card](https://goreportcard.com/badge/github.com/johejo/go-cover-view)](https://goreportcard.com/report/github.com/johejo/go-cover-view)
+# gocoverview
 
 simple go coverage report viewer
 
 ## Install
 
 ```
-go get github.com/johejo/go-cover-view
-go install github.com/johejo/go-cover-view
+go get github.com/kjda/gocoverview
+go install github.com/kjda/gocoverview
 ```
 
 ## Get Started
@@ -60,7 +55,7 @@ go test . -cover -coverprofile coverage.txt
 view coverage report.
 
 ```sh
-go-cover-view
+gocoverview
 ```
 
 ```
@@ -79,7 +74,7 @@ O 8: 	return true
 json output
 
 ```sh
-go-cover-view -output json
+gocoverview -output json
 ```
 
 ```json
@@ -95,7 +90,7 @@ go-cover-view -output json
 markdown output
 
 ```sh
-go-cover-view -output markdown
+gocoverview -output markdown
 ```
 
 ```markdown
@@ -156,15 +151,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git fetch origin master
-          go get github.com/johejo/go-cover-view
-          go install github.com/johejo/go-cover-view
-          go-cover-view -ci github-actions -git-diff-base origin/master
+          go get github.com/kjda/gocoverview
+          go install github.com/kjda/gocoverview
+          gocoverview -ci github-actions -git-diff-base origin/master
 ```
 
 ## Help
 
 ```
-Usage of go-cover-view:
+Usage of gocoverview:
   -ci string
         ci type: available values "", "github-actions"
         github-actions:
@@ -191,4 +186,4 @@ MIT
 
 ## Author
 
-Mitsuo Heijo (@johejo)
+Mitsuo Heijo (@kjda)

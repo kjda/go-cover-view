@@ -1,4 +1,4 @@
-# go-cover-view
+# gocoverview
 
 
 <details> <summary> example.com/example/example.go </summary>

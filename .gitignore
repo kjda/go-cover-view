@@ -1,4 +1,4 @@
 .idea
 .vscode
-go-cover-view
+gocoverview
 coverage.txt

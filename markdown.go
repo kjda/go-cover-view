@@ -17,7 +17,7 @@ import (
 )
 
 var reportTmp = template.Must(template.New("report").Parse(`
-# go-cover-view
+# gocoverview
 
 {{range .}}
 <details> <summary> {{.FileName}} </summary>
@@ -134,7 +134,7 @@ func upsertGitHubPullRequestComment(profiles []*cover.Profile, path string) erro
 	var commentID int64
 	for _, c := range comments {
 		u := c.GetUser()
-		if u.GetLogin() == "github-actions[bot]" && u.GetType() == "Bot" && strings.Contains(c.GetBody(), "# go-cover-view") {
+		if u.GetLogin() == "github-actions[bot]" && u.GetType() == "Bot" && strings.Contains(c.GetBody(), "# gocoverview") {
 			commentID = c.GetID()
 			break
 		}
