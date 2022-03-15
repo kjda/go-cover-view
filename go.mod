@@ -1,4 +1,4 @@
-module github.tmc-stargate.com/khaled-jouda/go-cover-view
+module github.com/kjda/go-cover-view
 
 go 1.14
 
