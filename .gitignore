@@ -2,3 +2,5 @@
 .vscode
 gocoverview
 coverage.txt
+
+dist/
